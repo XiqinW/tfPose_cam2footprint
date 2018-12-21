@@ -1,0 +1,10 @@
+<launch>
+    <!--this pkg is designed for /camera_pose in nav_msgs::Odometry-->
+    <node name="Pub_Footprint" pkg="sensor2footprint" type="Pub_Footprint" output="screen">
+        <param name="src_frame_id" value="/cam" />
+        <param name="des_frame_id" value="/imu" />
+        <param name="src_data_tpc" value="/xqserial_server/Odom" />
+        <param name="des_data_tpc" value="/payload_pose" />
+    </node>
+
+</launch>

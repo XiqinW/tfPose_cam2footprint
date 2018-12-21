@@ -1,0 +1,9 @@
+<launch>   
+    <node name="Add_Camtf" pkg="sensor2footprint" type="Add_Camtf" output="screen">
+        <param name="config_file" value="$(find sensor2footprint)/cfg/cam_on_xq/ex_matrix.yaml" />
+        <param name="src_frame_id" value="/imu" />
+        <param name="des_frame_id" value="/cam" />
+    </node>
+
+
+</launch>

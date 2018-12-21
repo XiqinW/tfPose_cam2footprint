@@ -1,0 +1,16 @@
+%YAML:1.0
+
+#Rotation from camera frame to imu frame, imu^R_cam
+extrinsicRotation: !!opencv-matrix
+   rows: 3
+   cols: 3
+   dt: d
+   data: [ 2.4170233998378698e-02, -9.9848341261353324e-01, -4.9463870896817953e-02,
+           9.9924790559650944e-01, 2.5630243085262072e-02, -2.9098347038624947e-02, 
+           3.0321987887562608e-02, -4.8723355539451854e-02, 9.9835194779973391e-01 ]
+#Translation from camera frame to imu frame, imu^T_cam
+extrinsicTranslation: !!opencv-matrix
+   rows: 3
+   cols: 1
+   dt: d
+   data: [ -2.0812296098644396e-02, 9.0198690842851384e-02, -1.0830518204412203e-01 ]
